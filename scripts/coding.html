@@ -1,0 +1,81 @@
+<html>
+<head>
+  <title>Coding Interview</title>
+</head>
+<link rel="stylesheet" type="text/css" href="css/head.css">
+<meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+p{
+   font-family:verdana; color:black; font-size:30px;
+}
+body{
+  background-image: url("images/bg.jpg");
+}
+</style>
+<script>
+$(document).ready(function(){
+    $(".nav-tabs a").click(function(){
+        $(this).tab('show');
+    });
+});
+</script>
+<body>
+	<br/><center><img src="images/logo.png" width="900"></center>
+	<div class="container">
+		<div class="row">
+           <div class="col-sm-6">
+           	<br>
+           	<img src="images/know.png" alt=" " height="150px" width="150px"/>
+           </div>
+           <div class="col-sm-6">
+           	<br>
+              <ul class="nav nav-tabs">
+								<li class="active"><a href="home.html">Menu</a></li>
+								<li><a href="#python">Python</a></li>
+								<li ><a href="#coding">Coding Interviews</a></li>
+								<li><a href="#algorithms">Algorithms</a></li>
+				        <li><a href="#OS">Operating systems</a></li>
+              </ul>
+                <br>
+                <div class="tab-content">
+                  <div id="home" class="tab-pane fade in active">
+                    <br>
+                    <h3>Welcome to Knowledge Stack</h3>
+                    <br>
+                    <h4><marquee>
+                        Learn various concepts through video playlists over here 
+                    </marquee></h4>
+                  </div>
+                  <div id="python" class="tab-pane fade">
+                <center> <p>Python From Beginners To Pro</p>
+                  <br>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/tKTZoB2Vjuk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </center>
+              </div>
+              <div id="coding" class="tab-pane fade">
+                <center> <p>Challenges in Coding interviews</p>
+                  <br>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/qli-JCrSwuk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+                  </iframe>
+                </center>
+              </div>
+              <div id="algorithms" class="tab-pane fade">
+                <p>Design and analysis of Algorithms</p><br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/aGjL7YXI31Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <br></center>
+              </div>
+              <div id="OS" class="tab-pane fade">
+              <p>Operating Systems</p><br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/vBURTt97EkA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <br></center>
+            </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </body>
+</html>

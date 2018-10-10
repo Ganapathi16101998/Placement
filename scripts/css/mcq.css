@@ -1,0 +1,36 @@
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+.rect{
+	width : 1200px;
+	height : 600px;
+	background-color: black ;
+	opacity: 0.5;
+}
+
+.hect{
+	width : 368px;
+	height : 600px;
+	background-color: black;
+	opacity: 0.7;
+}
+
+.question{
+
+	width : 368px;
+	height : 250px;
+	background-color: white;
+	opacity: 0.8;
+	overflow-y: scroll;
+}
+.qnframe{
+	width : 1070px;
+	height : 451px;
+	background-color: white;
+	overflow-y: scroll;
+}

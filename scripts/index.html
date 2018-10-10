@@ -1,0 +1,49 @@
+
+<html>
+<head>
+  <title>Placement Skill Test Portal | Login </title>
+<link rel="stylesheet" href="css/Login.css">
+ <link rel="stylesheet" type="text/css" href="css/bg.css">
+<script src="validate.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<video autoplay muted loop id="myVideo">
+  <source src="HD.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+  <br/>
+  <div class="col-sm-12">
+        <center><img src="images/logo.png" /> </center>
+       </div>
+
+    <div class="col-md-2"><br/><br/><img src="images/des.png"></div>
+     
+     <div class="topcorner"><br/><br/><br/><br/><br/><br/><br/>
+      <img src="images/studentlogin.png" width="375"> <br/><br/>
+    <form id="login" class="login-form" action="home.html" method="POST">
+      <input type="text"  name="user" placeholder="User Name"  required/>
+      <input type="password" name="pw" placeholder="Password" required/>
+      <center><button class="btn-danger btn-block" type="submit" onclick="validate();">Login</button></center>
+    </form>
+    <label>New user ? create a New Profile</label>&nbsp;&nbsp;&nbsp;&nbsp;
+    <form action="form.html"><button class="btn-danger btn-block" >Sign Up</button></form>
+</body>
+</html>
+<script>
+function validate(){
+                var user = document.forms["login"]["user"];
+                var password = document.forms["login"]["pw"];
+                if (user.value == "" && password.value == ""){
+                            window.alert("Please enter details properly");
+                }
+                else if (user.value == ""){
+                            window.alert("Please enter your name");
+                }
+                else if (password.value == ""){
+                            window.alert("Please enter your Password");
+                }
+            }
+</script>

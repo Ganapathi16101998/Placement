@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>User Details</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body background="images/bg.jpg">
+		<div class="header" align="center">
+			<img src="images/logo.png"/>
+		</div>
+		<div class="row">
+			<div class="col-md-4"></div>
+			<div class="col-md-4">
+	<div class="user_Details_form">
+		<form action="add_form.php" id = "Details" method="POST">
+			<img width="140"  src="images/signup.png" /><br/><br/>
+			<input type="text" name="fname" id="button" placeholder="Enter your first name"><br><br>
+			<input type="text" name="lname" id="button" placeholder="Enter your last name"><br><br>
+			<input type="email" name="email" id="button" placeholder="Enter your email id"><br><br>
+			
+			<input type="text" name="Password" id="button" placeholder="Enter your password"><br><br>
+			<input type="radio" name="Gender" id="rd"><span id="but">&nbsp;Male </span>&nbsp;&nbsp;&nbsp;<input type="radio" name="Gender" id="rd"><span id="but">&nbsp;Female</span><br><br>
+			<div class="DOB">
+        		DOB<input type="date" id="DOB" name="dob" value="2018-07-22" min="1950-01-01" max="2018-12-31" />
+    		</div><br><br>
+    		<div class="prog" id="prog_lang">
+    			<input type="checkbox" name="Programming_Languages" value="C++">  C++&nbsp; 
+    			<input type="checkbox" name="Programming_Languages" value="Java">  Java&nbsp;
+    			<input type="checkbox" name="Programming_Languages" value="Python">  Python<br><br>
+    		</div>
+    		<select name="Disticts" id="button">District
+    			<optgroup>
+    				<option district="Chennai">Chennai</option>
+    				<option district="Madurai">Madurai</option>
+    				<option district="Trichy">Trichy</option>
+    				<option district="Coimbatore">Coimbatore</option>
+    				<option district="Tirunelveli">Tirunelveli</option>
+    			</optgroup>
+    		</select><br><br>
+    		<button class="btn btn-primary" onclick="validate();">SUBMIT</button>
+		</form>	
+	</div>
+	<div class="col-md-4"></div>
+</div>
+</body>
+</html>
+<script type="text/javascript">
+	function validate(){
+                var fname = document.forms["Details"]["fname"];
+                var lname = document.forms["Details"]["lname"];
+                var mail = document.forms["Details"]["email"];
+                if (fname.value == "" && lname.value == ""){
+                            window.alert("Enter your Name properly");
+                }
+                else if (fname.value == "" ){
+                            window.alert("Enter your First Name properly");
+                }
+                else if (lname.value == ""){
+                            window.alert("Enter your Last Name properly");
+                }  
+                if (mail.value.indexOf('@',0)<0) {
+                    window.alert("Please enter valid Email");
+                }
+                else{
+                	window.alert("Thank you!");
+                }
+            }
+</script>
